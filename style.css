@@ -12,12 +12,24 @@
 }
 body {
   background-color: var(--pale-blue);
+  margin: 0;
+  padding: 0;
 }
 .container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 95vh;
   background-image: url("/images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.card {
+  max-width: 90vw;
+  background-color: white;
+  width: 22rem;
+  height: 35rem;
+  border-radius: 1.5rem;
+  margin: auto;
 }
 @media only screen and (max-width: 375px) {
   .container {
